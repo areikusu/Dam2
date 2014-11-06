@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-nov-2014 16:30:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="primero.Empleados" table="empleados" catalog="empresa">
+        <id name="empNo" type="int">
+            <column name="emp_no" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="10" />
+        </property>
+        <property name="fechaAlt" type="date">
+            <column name="fecha_alt" length="10" />
+        </property>
+        <property name="localidad" type="string">
+            <column name="localidad" length="15" />
+        </property>
+        <property name="salario" type="java.lang.Integer">
+            <column name="salario" />
+        </property>
+        <property name="deptNo" type="int">
+            <column name="dept_no" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

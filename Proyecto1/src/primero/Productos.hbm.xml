@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-nov-2014 18:37:10 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="primero.Productos" table="productos" catalog="unidad2">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="15" />
+        </property>
+        <property name="stockActual" type="java.lang.Integer">
+            <column name="stockActual" />
+        </property>
+        <property name="stockMinimo" type="java.lang.Integer">
+            <column name="stockMinimo" />
+        </property>
+        <property name="pvp" type="java.lang.Short">
+            <column name="pvp" precision="3" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

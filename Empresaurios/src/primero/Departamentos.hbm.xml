@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-nov-2014 16:30:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="primero.Departamentos" table="departamentos" catalog="empresa">
+        <id name="deptNo" type="int">
+            <column name="dept_no" />
+            <generator class="assigned" />
+        </id>
+        <property name="dnombre" type="string">
+            <column name="dnombre" length="15" />
+        </property>
+        <property name="loc" type="string">
+            <column name="loc" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>
